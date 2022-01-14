@@ -23,7 +23,7 @@ PayloadStatus releasePayload(){
       return Released;
     }
     else{
-      logError("Payload failed to release");
+      logError("Payload","Payload failed to release");
       return NotReleased;
     }
   }
