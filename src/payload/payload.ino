@@ -8,7 +8,6 @@ typedef enum {
   NotReleased
 } PayloadStatus;
 
-// Logs the status of the payload
 // Releases the payload, if it is not already released. 
 // Verifys the payload is released
 PayloadStatus releasePayload(){
@@ -24,7 +23,7 @@ PayloadStatus releasePayload(){
       return Released;
     }
     else{
-      logError("Payload","Payload failed to release");
+      logError("Payload failed to release");
       return NotReleased;
     }
   }
